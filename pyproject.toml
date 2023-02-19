@@ -21,13 +21,13 @@ test = ["coverage"]
 "Bug Reports" = "https://github.com/alexandrediasldev/ghactiontest/issues"
 "Source" = "https://github.com/alexandrediasldev/ghactiontest/"
 
-# The following would provide a command line executable called `run-gh-action-test`
+# The following would provide a command line executable called `example`
 # which executes the function `main` from this package when invoked.
 [project.scripts]  # Optional
-run-gh-action-test = "runghactiontest:main"
+example = "example:main"
 
 [tool.setuptools]
-package-data = {"run-gh-action-test" = ["*.dat"]}
+package-data = {"example" = ["*.dat"]}
 
 [build-system]
 requires = ["setuptools>=43.0.0", "wheel"]
