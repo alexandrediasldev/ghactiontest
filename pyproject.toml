@@ -24,7 +24,7 @@ test = ["coverage"]
 # The following would provide a command line executable called `run-gh-action-test`
 # which executes the function `main` from this package when invoked.
 [project.scripts]  # Optional
-run-gh-action-test = "run-gh-action-test:main"
+run-gh-action-test = "runghactiontest:main"
 
 [tool.setuptools]
 package-data = {"run-gh-action-test" = ["*.dat"]}
