@@ -2,7 +2,7 @@
 # Project name for pypi
 # $ pip install gh_action_gdsc_username
 name = "gh_action_gdsc_username"  # Required
-version = "1.0.0"  # Required
+version = "1.0.1"  # Required
 description = "A sample python github action project from GDSC EPITA"  # Optional
 readme = "README.md" # Optional
 requires-python = ">=3.7"
