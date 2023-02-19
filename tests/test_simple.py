@@ -1,13 +1,12 @@
 import unittest
-
-from sample.simple import add_one
+from unittest.mock import patch
+from io import StringIO
+from example.simple import say
 
 
 class TestSimple(unittest.TestCase):
-
-    def test_add_one(self):
-        self.assertEqual(add_one(5), 6)
-
-
-if __name__ == '__main__':
-    unittest.main()
+    @patch('sys.stdout', new_callable = StringIO)
+    def test_say(self, stdout):
+        say("Hello")
+        extected_out = 'Hello\n'
+        self.assertEqual(stdout.getvalue(), extected_out)
